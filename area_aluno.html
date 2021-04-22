@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área do aluno</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Colar aqui o header -->
+  <header class="floatfix">
+      <nav>
+        <ul>
+          <li>
+            <img src="https://br.cellep.com/wp-content/themes/cellep/assets/img/logo_branca.svg" alt="Logo do Cel.Lep na cor branca">
+          </li>
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="agenda.html">Agenda</a>
+          </li>
+          <!-- Menu Dropdown -->
+          <li>
+
+            <div class="dropdown">
+              <a href="#">Entidades</a>
+              <div class="dropdown-content">
+                <a href="https://estacaohack.fb.com/" target="_blank">Estação Hack</a>
+                <a href="https://br.cellep.com/estacaohack/" target="_blank">Cel.Lep</a>
+              </div>
+            </div>
+
+          </li>
+          <!-- Menu Dropdown -->
+          <li>
+            <a href="#" class="active">Área do aluno</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <h2>Área do aluno</h2>
+
+      <form action="#" id="form_login" method="POST">
+
+        <label for="input_login">Login</label>
+        <input type="text" name="input_login" id="input_login" placeholder="Informe o login" required>
+
+        <label for="input_senha">Senha</label>
+        <input type="password" name="input_senha" id="input_senha" placeholder="Informe a senha" required>
+
+        <input type="submit" value="Entrar" class="btn color-orange">
+
+      </form>
+
+    </main>
+
+  <!-- Footer -->
+  <footer>
+    <img src="https://br.cellep.com/wp-content/themes/cellep/assets/img/logo_branca.svg" alt="">
+  </footer>
+
+  <script>
+
+    // JS é uma linguagem de programação
+
+    // Ligando o HTML ao JS
+    var formulario = document.querySelector("#form_login");
+    var inputLogin = document.querySelector("#input_login");
+    var inputSenha = document.querySelector("#input_senha");
+
+    // Escutando um evento
+    formulario.addEventListener("submit", function(){
+      // Bloco de código, Escopo
+      if (inputLogin.value == "gustavo" && inputSenha.value == "1234") {
+        
+        alert("Acesso permitido");
+
+      } else {
+
+        alert("Acesso negado");
+
+      }
+
+    })
+
+  </script>
+</body>
+</html>
